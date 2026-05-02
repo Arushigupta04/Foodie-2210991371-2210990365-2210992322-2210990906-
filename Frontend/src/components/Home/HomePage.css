@@ -1,0 +1,482 @@
+.main-container{
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.divv2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: linear-gradient(to bottom, rgb(249, 183, 61, 0.7), rgb(249, 183, 61, 0.60), rgb(249, 183, 61, 0.53), rgb(249, 183, 61, 0.45));
+}
+
+.div2 {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div2 .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: minmax(270px, auto);
+    grid-auto-columns: auto;
+}
+
+.card1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.card2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.card4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.div2 .left .card {
+    height: 250px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div2 .left .card .heading i {
+    background-color: rgba(248, 181, 58, 0.5);
+    padding: 5px;
+    border-radius: 100px;
+    color: rgb(241, 161, 13);
+    font-size: 35px;
+}
+
+.div2 .left .card {
+    transition: all 0.1s;
+}
+
+.div2 .left .card:hover {
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+.div2 .left .card .heading h2 {
+    font-size: 35px;
+    padding: 5px 0px;
+}
+
+.div2 .left .card .text {
+    font-size: 15px;
+}
+
+.div2 .righttt {
+    padding: 30px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div2 .righttt h1 {
+    font-size: 60px;
+    color: #FFA700;
+    margin: 0px;
+    margin-left: -100px;
+}
+
+.div2 .righttt h2 {
+    font-size: 35px;
+    padding: 10px 0px;
+    margin-left: -140px; /* Moves the heading 1px to the left */
+}
+
+
+.div2 .righttt p {
+    font-size: 20px;
+}
+
+#star {
+    background-color: white;
+    color: yellow;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.div3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-auto-rows: minmax(280px, auto);
+    gap: 1.25rem;
+    overflow-y: none;
+    padding: 1.5rem;
+}
+
+.images {
+    border-radius: 4px;
+    transition: all 0.3s;
+    overflow-y: hidden;
+}
+
+.images:hover {
+    transform: scale(1.04);
+}
+
+.divvv3 {
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: -80px;
+    text-align: center;
+    padding: 40px;
+    color: rgb(4, 4, 44);
+}
+
+
+@media (min-width:769px) {
+    .video {
+        height: 70vh;
+    }
+}
+
+.video video {
+    width: 90% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divv4 {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(249, 183, 61, 0.7), rgb(249, 183, 61, 0.60), rgb(249, 183, 61, 0.53), rgb(249, 183, 61, 0.45));
+}
+
+.divv4 .text {
+    width: 35%;
+    padding: 20px;
+}
+
+.divv4 .text .font {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.divv4 .boxes {
+    width: 65%;
+    gap: 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.divv4 .box {
+    background-color: white;
+    overflow: hidden;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.divv4 .box:hover {
+    transform: scale(1.04);
+}
+
+.divv4 .boxes .box1 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.divv4 .boxes .box3 {
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+.divv4 .boxes .box2 {
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.divv4 h1 {
+    font-size: 40px;
+}
+
+.divv4 h1 span {
+    color: #FFA700
+}
+
+.divv4 .box {
+    padding: 10px;
+    height: 350px;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.divv4 .box img {
+    object-fit: cover;
+    object-position: top;
+}
+
+.divv4 .box .des {
+    padding: 10px;
+
+}
+
+.divv5 {
+    min-height: 600px;
+    background: url('./image/comma.svg') no-repeat top center, url('./image/dot-pattern.svg') no-repeat bottom right;
+    background-size: 200px 200px, 200px 200px;
+    display: flex;
+
+}
+
+.divv5 .sub11 {
+    padding: 10px;
+
+    display: flex;
+    justify-items: center;
+
+}
+
+.divv5 .sub11 .subb {
+    width: 80%;
+    margin: auto;
+    height: 80%;
+
+}
+
+.divv5 .sub11 h1 {
+    padding: 10px;
+    font-size: 43px;
+    margin-top: 30px;
+}
+
+.divv5 .sub11 h1 span {
+    color: #FFA700;
+    margin-top: 30px;
+}
+
+.divv5 .sub11 p {
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.divv5 .sub2 img {
+    /* width: 100%; */
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 8px 24px #959da5;
+    object-fit: cover;
+}
+
+.divv5 .sub2 .subb21,
+.divv5 .sub2 .subb22 {
+    display: flex;
+    align-items: last baseline;
+    justify-items: center;
+    justify-content: center;
+}
+
+@media (max-width:769px) {
+    .video {
+        height: 70vh;
+    }
+
+    .video video {
+        width: 90%;
+    }
+
+    .divv5 {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:770px) {
+    .divv5 .sub11 {
+        width: 50%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .div2 {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .div2 .left {
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .div2 .right {
+        padding: 20px;
+        padding-left: 40px;
+        text-align: center;
+    }
+
+    .divv4 .boxes .box1 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .divv4 .boxes .box3 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .divv4 .boxes .box2 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .divv4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divv4 .text {
+        width: 90%;
+    }
+
+    .divv4 .boxes {
+        width: 80%;
+    }
+
+    .divv4 .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .box img {
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .div2 {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .div2 .left {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .div2 .left .card {
+        grid-column: 1/2;
+        grid-row: unset;
+    }
+
+    .div2 .right {
+        padding: 20px;
+        padding-left: 40px;
+        text-align: center;
+    }
+
+    .div2 .left .card .heading i {
+        font-size: 25px;
+    }
+
+    .div2 .left .card .heading h2 {
+        font-size: 25px;
+    }
+
+    .div2 .left .card .text {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .div2 {
+      width: 90%;
+      margin: auto;
+      grid-template-columns: 1fr;
+    }
+  
+    .div2 .left {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+  
+    .div2 .left .card {
+      grid-column: 1/2;
+      grid-row: unset;
+    }
+  
+    .div2 .right {
+      padding: 20px;
+      padding-left: 40px;
+      text-align: center;
+    }
+  
+    .div2 .left .card .heading i {
+      font-size: 25px;
+    }
+  
+    .div2 .left .card .heading h2 {
+      font-size: 25px;
+    }
+  
+    .div2 .left .card .text {
+      font-size: 12px;
+    }
+  
+    .divv5 .sub2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .divv5 .sub2 .subb21,
+    .divv5 .sub2 .subb22 {
+      align-items: center;
+    }
+  
+    .divv5 .sub2 img {
+      width: 80%; /* Adjust image width */
+      margin: 10px;
+    }
+  }
+  
+  
