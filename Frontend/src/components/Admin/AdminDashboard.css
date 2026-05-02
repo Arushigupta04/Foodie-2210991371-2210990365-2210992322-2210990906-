@@ -1,0 +1,6 @@
+.gradient-backgroundAP {
+    background: linear-gradient(to left, #fff3e0, #ffcc80); 
+    min-height: 100vh; /* Make sure it takes full viewport height */
+    display: flex;
+    flex-direction: column;
+}
