@@ -1,0 +1,121 @@
+.gradientt-background {
+  background: linear-gradient(to left, #fff3e0, #ffcc80); 
+  /* Light gradient background */
+}
+.containerI {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.titleI {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+  color:#007bff;
+}
+
+.loadingI,
+.no-categoriesI {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+.gridI {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.cardI {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardI:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-imageI {
+  width: 100%;
+  height: 220px; /* Set a fixed height for consistency */
+  background-color: #ffffff; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain; /* Ensure the whole image is visible */
+  object-position: center; /* Center the image */
+}
+
+.card-contentI {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-titleI {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.card-descriptionI {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow the description to take up space */
+}
+
+.card-actionsI {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 15px 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.buttonI {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-buttonI {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.update-buttonI:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.delete-buttonI {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-buttonI:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
