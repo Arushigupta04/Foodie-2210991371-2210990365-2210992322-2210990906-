@@ -1,0 +1,233 @@
+/* Parallax effect */
+.parallax {
+    background-image: url("../../assets/category-images/Brown Cute Illustration Korean Food Banner.gif");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* About Section */
+.cont-about {
+    min-width: 100vw;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.bi-gear-fill, .bi-fire {
+    transition: transform 0.3s ease;
+}
+
+.bi-gear-fill:hover, .bi-fire:hover {
+    transform: rotate(360deg);
+}
+
+/* Image Hover Effects */
+.img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Amenities Section */
+.amenities-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-image: url(../../assets/category-images/background-food.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.header h1 {
+    background-color: rgba(255, 255, 255, 0.5); 
+    /* color: rgb(198, 99, 32); */
+    color: #f98314;
+    padding: 10px 20px;
+    font-size: 54px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 1px;
+}
+
+.divider {
+    height: 20px;
+ 
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    background-image: url(../../assets/category-images/background-food.jpg);
+    background-size: cover;
+}
+
+.feature {
+    text-align: center;
+    max-width: 250px;
+    margin: 20px;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    /* color: rgb(198, 99, 32); */
+    color: #f98314;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+/* Feedback Section */
+.feedback {
+    padding: 40px 20px;
+    background-color: #333;
+}
+
+.feedback-main-div {
+    background-image: url("../../assets/category-images/background-black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.Feedback-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial {
+    background: rgba(0, 0, 0, 0.7); 
+    border: 5px rgb(239, 233, 233) solid;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    max-width: 90%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.testimonial-text {
+    position: relative;
+    text-align: center;
+}
+
+.name {
+    font-size: 2.5em;
+    margin: 0;
+    color: #ffd700; /* Gold color */
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+.feedback-star {
+    font-size: 24px;
+    color: gold;
+    margin: 0 2px;
+}
+
+.role {
+    font-size: 1.7em;
+    margin: 0;
+    color: #bbb;
+}
+
+.review-para {
+    margin-top: 20px;
+    font-size: 1.25em;
+    color: white;
+}
+
+.Quote-image {
+    width: 80px;
+    height: 80px;
+    border: 1px rgb(235, 226, 226) dotted;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -10px;
+    right: -60px;
+    background-color: rgb(230, 218, 218);
+}
+
+.feedback-header {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.feedback-header h1 {
+    color: #ffd700; /* Gold color */
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.feedback-header p {
+    color: #ccc;
+    font-size: 1.5em;
+    max-width: 700px;
+    margin: 0 auto;
+}
