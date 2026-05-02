@@ -1,0 +1,203 @@
+.signup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 900px;
+  padding: 75px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.signup-form {
+  width: 50%;
+  padding: 0 50px;
+}
+
+.signup-form .form-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.signup-form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.signup-form label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2); /* Increase checkbox size */
+  accent-color: #f98314; /* Change checkbox color */
+}
+
+.signup-form .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #f4992a;
+}
+
+.signup-form .form-button {
+  text-align: right;
+}
+
+.form-submit {
+  background-color: #f98314;
+  color: white;
+  font-weight: 700;
+}
+
+.form-submit:hover {
+  background-color: #905013;
+}
+
+.signup-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.signup-image .signup-image-link {
+  color: #f98314;
+}
+
+.signup-image .signup-image-link:hover {
+  color: #a06d26;
+}
+.sign-up-link{
+cursor: pointer;
+}
+.already-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.signup-image-link {
+  margin-bottom: 25px;
+  border: none;
+  background-color: white;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .signup-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
+  .signup-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .signup-form .form-title {
+    font-size: 24px;
+  }
+
+  .signup-image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.address-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.address-field:focus {
+  outline: none;
+  border-color: #f4992a;
+}
+.error-text {
+  color: red;
+  font-size: 0.875rem; /* Optional for smaller error text */
+  margin-top: 4px; /* Adds a little spacing between input and error text */
+}
+
+
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+input[type="password"], input[type="text"] {
+  padding-right: 30px; /* Give space for the eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust right to space the icon properly */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+.eye-icon1 {
+  position: absolute;
+  top: 33%;
+  right: 10px; /* Adjust right to space the icon properly */
+  transform: translateY(-40%);
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.password-strength {
+  font-size: 14px;
+  color: #888;
+}
+
+.password-strength.weak {
+  color: red;
+}
+
+.password-strength.moderate {
+  color: orange;
+}
+
+.password-strength.strong {
+  color: green;
+}
+
+.password-strength.very-strong {
+  color: darkgreen;
+}
