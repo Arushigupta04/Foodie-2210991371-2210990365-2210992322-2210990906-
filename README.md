@@ -76,6 +76,3 @@ Delivery Tracking System
 🌍 Multi-language Support
 🎁 Reward & Loyalty System
 
-Admin mail and password-
-henrygarg@gmail.com
-pass-1234as
